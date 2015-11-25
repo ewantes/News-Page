@@ -31,7 +31,7 @@
 
 	<header class="home-page-header"><!-- header START -->
 			<div class="row row-for-margin">
-				<div class="support">
+				<div class="support hidden-xs hidden-sm">
 					<a href="#">
 						<span>Підтримати<br>нас</span>
 						<img src="img/arrow-down.png" height="37" width="38" alt="DOWN">
@@ -42,12 +42,12 @@
 	                            <input class="input-search" type=search placeholder="Пошук по сайту">
 	                        </div>
 	                    </div>
-				<div class="col-md-12 col-lg-10 col-lg-offset-1 container-for-header">
+				<div class="col-md-12 col-lg-10 col-lg-offset-1 container-for-header max-size-for-content">
 					<div class="col-lg-4 col-md-3 left-header-home">
-						<div class="col-lg-6 col-md-8 left-header-mn clearfix">
+						<div class="col-lg-6 col-md-8 hidden-sm hidden-xs left-header-mn clearfix">
 							<img src="img/logo.png" height="128" width="251" alt="logo">
 						</div>
-						<div class="col-lg-6 col-md-4 right-header-mn clearfix">
+						<div class="col-lg-6 col-md-4 hidden-sm hidden-xs right-header-mn clearfix">
 							<div class="dropdown pull-left">
 	                            <button class="btn btn-default lang-btn dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 	                                UA <i class="fa fa-angle-down"></i>
@@ -60,7 +60,7 @@
 					</div>
 					<div class="col-lg-8 col-md-9 right-header-home">
 						<div class="col-md-12 col-lg-12 right-header-news">
-							<nav>
+							<nav class="full-size-nav">
 								<ul id="ddmenu" class="clearfix">
 									<li><a href="#">Про ЦППР</a></li>
 									<li><a href="#">Напрямки діяльності</a>
@@ -102,11 +102,59 @@
 				</div>
 			</div>
 	</header><!-- header END -->
+<!-- navbar-responsive-begin -->
+	<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid cont-nav">
+    <div class="div-img">
+      <a class="btn btn-navbar navbar-btn" data-toggle="collapse" data-target=".nav-collapse">
+      
+      <img src="img/nav-tablet.png" alt="MENU">
+      
+      </a></div>
+      <div class="nav-collapse  collapse">
+        <ul class="nav">
+          <li class="active"><a href="#"><i class="icon-home icon-white"></i>Про ЦППР</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Напрямки діяльності<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+				<li><a href="#">Права людини</a></li>
+				<li><a href="#">Конституційне правосуддя</a></li>
+				<li><a href="#">Політичні партії та вибори</a></li>
+				<li><a href="#">Парламентаризм</a></li>
+				<li><a href="#">Конституційна реформа</a></li>
+            </ul>
+          </li>
 
-	<main><!-- main START -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Інфографіка<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            <li><a href="#">Конституціоналізм</a></li>
+				<li><a href="#">Публічна адміністрація</a></li>
+				<li><a href="#">Судівництво</a></li>
+				<li><a href="#">Кримінальна юстиція</a></li>
+				<li><a href="#">Протидія корупції</a></li>
+				<li><a href="#">Адміністративні послуги</a></li>
+				<li><a href="#">Європейська інтеграція</a></li>
+            </ul>
+          </li>
+		<li class="active"><a href="#"><i class="icon-home icon-white"></i>Законопроектна діяльність</a></li>
+		<li class="active"><a href="#"><i class="icon-home icon-white"></i>Новини</a></li>
+		<li class="active"><a href="#"><i class="icon-home icon-white"></i>Підтримати нас</a></li>
+
+        </ul>
+        <form class="navbar-search" action="">
+          <input type="text" class="search-query span2" placeholder="Пошук по сайту">
+        </form>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+<!-- navbar-responsive-end -->
+	<main class="max-size-for-content"><!-- main START -->
 		<div class="row row-for-margin">
-			<div class="col-md-12 col-lg-10 col-lg-offset-1">
-				<div class="col-md-2">
+			<div class="cont-news col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1">
+				<div class="col-md-2 col-sm-2 col-xs-12">
 					<div class="top-for-left-main">
 						<div class="hexagon">
 							<span>14 жовтня 2015</span>
@@ -114,17 +162,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-10 right-text-for-news">
+				<div class="col-md-10 col-sm-10 col-xs-12 right-text-for-news">
 					<h1>Остання новина</h1>
 				</div>
 			</div>
-			<div class="col-md-12 col-lg-10 col-lg-offset-1">
-				<div class="col-md-6">
+			<div class="col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="main-img-cont">
 						<img src="img/news-main-cont.png" height="336" width="587" alt="last-news">
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="index-text-info">
 						<h3>Коли Україна заплатить компенсацію жертвам насильства?</h3>
 					</div>
@@ -134,10 +182,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-lg-10 col-lg-offset-1">
-				<div class="col-md-10">
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+			<div class="col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1">
+				<div class="col-md-10 col-sm-10 col-xs-12">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -145,13 +193,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>Венеційська комісія підтримала набір нових суддів через конкурс</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">Венеційська комісія підтримала набір нових суддів через конкурс</a></h3>
 							<p>Про це повідомив Роман Куйбіда, заступник голови Центру політико-правових реформ, експерт групи РПР "Судова реформа", який перебуває на засіданні ко</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -159,13 +207,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства</a></h3>
 							<p>У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства.</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -173,13 +221,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>21 жовтня - прес-конференція «Коли Україна заплатить компенсацію жертвам насильства?»</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">21 жовтня - прес-конференція «Коли Україна заплатить компенсацію жертвам насильства?»</a></h3>
 							<p>У середу, 21 жовтня, об 11:30 в інформаційному агентстві УНІАН (Київ, вул. Хрещатик, 4) відбудеться прес-конференція на тему: «Коли Україна заплатить компенсацію жертвам насильства?».</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -187,13 +235,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>З 2017 року олігархи не зможуть більше мати «кишенькові партії» - М.Хавронюк</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">З 2017 року олігархи не зможуть більше мати «кишенькові партії» - М.Хавронюк</a></h3>
 							<p>Прийнятий Верховною Радою закон про внесення змін до деяких законодавчих актів України щодо запобігання і протидії політичній корупції (№2123а) дозволить зменшити вплив великого бізнесу на політику завдяки державному фінансуванню політичних партій.</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -201,13 +249,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>Венеційська комісія підтримала набір нових суддів через конкурс</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">Венеційська комісія підтримала набір нових суддів через конкурс</a></h3>
 							<p>Про це повідомив Роман Куйбіда, заступник голови Центру політико-правових реформ, експерт групи РПР "Судова реформа", який перебуває на засіданні ко</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -215,13 +263,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства</a></h3>
 							<p>У Раді Європи радять владі України розробити ефективний механізм відшкодування жертвам насильства.</p>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -229,14 +277,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>21 жовтня - прес-конференція «Коли Україна заплатить компенсацію жертвам насильства?»</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">21 жовтня - прес-конференція «Коли Україна заплатить компенсацію жертвам насильства?»</a></h3>
 							<p>У середу, 21 жовтня, об 11:30 в інформаційному агентстві УНІАН (Київ, вул. Хрещатик, 4) відбудеться прес-конференція на тему: «Коли Україна заплатить компенсацію жертвам насильства?».</p>
 						</div>
 
 					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="col-md-3">
+					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="top-for-left-main">
 								<div class="hexagon">
 									<span>14 жовтня 2015</span>
@@ -244,15 +292,15 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9 main-text-style">
-							<h3>З 2017 року олігархи не зможуть більше мати «кишенькові партії» - М.Хавронюк</h3>
+						<div class="col-md-9 col-sm-9 col-xs-12 main-text-style">
+							<h3><a href="#">З 2017 року олігархи не зможуть більше мати «кишенькові партії» - М.Хавронюк</a></h3>
 							<p>Прийнятий Верховною Радою закон про внесення змін до деяких законодавчих актів України щодо запобігання і протидії політичній корупції (№2123а) дозволить зменшити вплив великого бізнесу на політику завдяки державному фінансуванню політичних партій.</p>
 						</div>
 						
 					</div>
 
 				</div>
-				<div class="col-md-2 archive">
+				<div class="col-md-2 col-sm-2 col-xs-12 archive">
 					<div class="title">
 						<h1>Архів</h1>
 					</div>
@@ -331,8 +379,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-12 col-lg-10 col-lg-offset-1 margin-top-for-buttons">
+				<div class="col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1 margin-top-for-buttons">
 				<div class="cont-for-button">
 					<ul>
 						<li><div class="active"><a href="#">1</a></div></li>
@@ -347,176 +394,186 @@
 				</div>
 				
 			</div>
+			</div>
+			
 		
 	
 	</main><!-- main -->
 	
-	<footer>
-		<div class="back-to-top">
-			<div class="hexagon">
-	            <a href="#"  onclick="return up()"><img src="img/back-to-top.png" height="29" width="24" alt="UP"></a> 
-	        </div> 
-        </div>
-		<div class="footer-nav">
-		<div class="row row-for-margin">
-		<div class="col-md-12 col-lg-10 col-lg-offset-1">
-			<div class="footer-cont">
-			<div class="col-md-3 footer-nav-left">
-				<div class="logo-footer">
-					<img src="img/logo-footer.png" height="94" width="184" alt="ЦППР">
-				</div>
-				<div class="footer-pre-logo">
-					<h4 class="footer-pre-logo">Центр політико-правових реформ</h4>
-				</div>
-				<div class="fb-pic">
-					<img src="img/fb-pic.png" height="214" width="243" alt="facebook-share">
-				</div>
-			</div>
-			<div class="col-md-9 footer-nav-right">
-				<div class="footer-nav-panel">
-					<div class="col-md-4 style-panel">
-						<ul>
-							<li><a href="#">Головна</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Про ЦППР</a></li>
-							<li><a href="#">Проекти</a></li>
-							<li><a href="#">Організація</a></li>
-							<li><a href="#">Діяльність</a></li>
-							<li><a href="#">Команда</a></li>
-							<li><a href="#">Видання</a></li>
-							<li><a href="#">Контакти</a></li>
-							<li><a href="#">Для журналістів</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Інфографіка</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Законотворчість</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Новини</a></li>
-							<li><a href="#">Тендери</a></li>
-							<li><a href="#">Вакансії</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Підтримати нас</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Шукаємо Волонтерів</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 style-panel">
-						<ul>
-							<li><a href="#">Конституціоналізм</a></li>
-							<li><a href="#">Права людини</a></li>
-							<li><a href="#">Конституційне правосуддя</a></li>
-							<li><a href="#">Політичні партії та вибори</a></li>
-							<li><a href="#">Парламентаризм</a></li>
-							<li><a href="#">Конституційна реформа</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Публічна адміністрація</a></li>
-							<li><a href="#">Теорія адміністративного права</a></li>
-							<li><a href="#">Адміністративна реформа</a></li>
-							<li><a href="#">Органи виконавчої влади</a></li>
-							<li><a href="#">Державна служба</a></li>
-							<li><a href="#">Адміністративна процедура</a></li>
-							<li><a href="#">Адміністративне деліктне право</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Судівництво</a></li>
-							<li><a href="#">Дисциплінарна відповідальність суддів</a></li>
-							<li><a href="#">Судова реформа</a></li>
-							<li><a href="#">Судоустрій і статус суддів</a></li>
-							<li><a href="#">Цивільне судочинство</a></li>
-							<li><a href="#">Кримінальне судочинство</a></li>
-							<li><a href="#">Адміністративна юстиція</a></li>
-							<li><a href="#">Правова допомога</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 style-panel">
-						<ul>
-							<li><a href="#">Протидія корупції</a></li>
-							<li><a href="#">Законодавство та коментарі</a></li>
-							<li><a href="#">Практика запобігання і протидії корупції</a></li>
-							<li><a href="#">Методологія антикорупційної експертизи</a></li>
-							<li><a href="#">Експертиза законів</a></li>
-							<li><a href="#">Експертиза законопроектів VII скликання</a></li>
-							<li><a href="#">Експертиза законопроектів VIII скликання</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Адміністративні послуги</a></li>
-							<li><a href="#">Теорія адміністративних послуг</a></li>
-							<li><a href="#">Центри надання адміністративних послуг</a></li>
-							<li><a href="#">Базові адміністративні послуги</a></li>
-							<li><a href="#">Плата за адміністративні послуги</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Європейська інтеграція</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			</div>
-			</div>
-		</div>
-		</div>
-		<div class="bg-contact">
-		<div class="footer-contact">
-				<div class="row footer-contact-table">
-				<div class="col-md-12 col-lg-10 col-lg-offset-1">
-					<div class="col-md-4 contact-info">
-						<table class="table-contact">
-							<tr>
-								<td>e-mail:</td>
-								<td class="mail-table"><a href="#">centre@pravo.org.ua</a></td>
-							</tr>
-							<tr>
-								<td>тел:</td>
-								<td>+38 044 278 03 17</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>+38 044 278 03 72</td>
-							</tr>
-							<tr>
-								<td>факс:</td>
-								<td>+38 044 278 16 55</td>
-							</tr>
-						</table>
-					</div>
-					<div class="col-md-4 link-info">
-						<p>Передруки та цитування вітаються за умови посилання на <span>www.pravo.org.ua</span></p>
-						<img src="img/share-for-web.png" height="30"  alt="share-social">
-					</div>
-					<div class="col-md-4">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Пошук по сайту">
-						  	<span class="input-group-addon" id="basic-addon1">
-						  		<img src="img/search-input.png" height="37" width="32" alt="search">
-
-						  	</span>
-					     </div>
-					     <div class="bottop-input">
-							<span>Розробка сайту:<img src="img/footer-input-logo.png" height="28" width="99" alt="logo-dev"></span>
-							<span>© Центр політико-правових реформ 1996 - 2015</span>
-					     </div>	
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-maps">
-                <div class="overlay">
-                    <span>м.Київ, вул.Хрещатик 4, оф. 13, поштовий індекс: 01001</span>
+    <footer>
+        <!--footer start -->
+            <div class="back-to-top">
+                <div class="hexagon">
+                    <a href="#"  onclick="return up()"><img src="img/back-to-top.png" height="29" width="24" alt="UP"></a> 
+                </div> 
+            </div>
+            <div class="footer-nav">
+            <div class="row row-for-margin clearfix max-size-for-content">
+            <div class="col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1">
+                
+                <div class="col-md-3 col-sm-3 col-xs-12 footer-nav-left">
+                    <div class="logo-footer">
+                        <img src="img/logo-footer.png" height="94" width="184" alt="ЦППР">
+                    </div>
+                    <div class="footer-pre-logo">
+                        <h4 class="footer-pre-logo">Центр політико-правових реформ</h4>
+                    </div>
+                    <div class="fb-pic hidden-xs">
+                        <img src="img/fb-pic.png" height="214" width="243" alt="facebook-share">
+                    </div>
                 </div>
-                <div id="map-canvas">
+                <div class="col-md-9 col-sm-9 col-xs-12 footer-nav-right">
+                    <div class="footer-nav-panel">
+                        <div class="col-md-4 col-sm-4 col-xs-12 style-panel">
+                            <ul>
+                                <li><a href="#">Головна</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Про ЦППР</a></li>
+                                <li><a href="#">Проекти</a></li>
+                                <li><a href="#">Організація</a></li>
+                                <li><a href="#">Діяльність</a></li>
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Видання</a></li>
+                                <li><a href="#">Контакти</a></li>
+                                <li><a href="#">Для журналістів</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Інфографіка</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Законотворчість</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Тендери</a></li>
+                                <li><a href="#">Вакансії</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Підтримати нас</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Шукаємо Волонтерів</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 style-panel">
+                            <ul>
+                                <li><a href="#">Конституціоналізм</a></li>
+                                <li><a href="#">Права людини</a></li>
+                                <li><a href="#">Конституційне правосуддя</a></li>
+                                <li><a href="#">Політичні партії та вибори</a></li>
+                                <li><a href="#">Парламентаризм</a></li>
+                                <li><a href="#">Конституційна реформа</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Публічна адміністрація</a></li>
+                                <li><a href="#">Теорія адміністративного права</a></li>
+                                <li><a href="#">Адміністративна реформа</a></li>
+                                <li><a href="#">Органи виконавчої влади</a></li>
+                                <li><a href="#">Державна служба</a></li>
+                                <li><a href="#">Адміністративна процедура</a></li>
+                                <li><a href="#">Адміністративне деліктне право</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Судівництво</a></li>
+                                <li><a href="#">Дисциплінарна відповідальність суддів</a></li>
+                                <li><a href="#">Судова реформа</a></li>
+                                <li><a href="#">Судоустрій і статус суддів</a></li>
+                                <li><a href="#">Цивільне судочинство</a></li>
+                                <li><a href="#">Кримінальне судочинство</a></li>
+                                <li><a href="#">Адміністративна юстиція</a></li>
+                                <li><a href="#">Правова допомога</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 style-panel">
+                            <ul>
+                                <li><a href="#">Протидія корупції</a></li>
+                                <li><a href="#">Законодавство та коментарі</a></li>
+                                <li><a href="#">Практика запобігання і протидії корупції</a></li>
+                                <li><a href="#">Методологія антикорупційної експертизи</a></li>
+                                <li><a href="#">Експертиза законів</a></li>
+                                <li><a href="#">Експертиза законопроектів VII скликання</a></li>
+                                <li><a href="#">Експертиза законопроектів VIII скликання</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Адміністративні послуги</a></li>
+                                <li><a href="#">Теорія адміністративних послуг</a></li>
+                                <li><a href="#">Центри надання адміністративних послуг</a></li>
+                                <li><a href="#">Базові адміністративні послуги</a></li>
+                                <li><a href="#">Плата за адміністративні послуги</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Європейська інтеграція</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+            <div class="bg-contact">
+            <div class="footer-contact">
+                    <div class="row footer-contact-table clearfix">
+                    <div class="col-md-12 col-lg-10 col-sm-12 col-xs-12 col-lg-offset-1">
+                        <div class="col-md-4 col-sm-4 col-xs-12 contact-info">
+                            <table class="table-contact">
+                                <tr>
+                                    <td>e-mail:</td>
+                                    <td class="mail-table"><a href="#">centre@pravo.org.ua</a></td>
+                                </tr>
+                                <tr>
+                                    <td>тел:</td>
+                                    <td>+38 044 278 03 17</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>+38 044 278 03 72</td>
+                                </tr>
+                                <tr>
+                                    <td>факс:</td>
+                                    <td>+38 044 278 16 55</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 link-info">
+                            <div class="text-inform-footer">
+                                <p>Передруки та цитування вітаються за умови посилання на <span>www.pravo.org.ua</span></p>
+                            </div>
+                            <div class="link-info-img">
+                                <img src="img/share-for-web.png" height="30"  alt="share-social">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Пошук по сайту">
+                                <span class="input-group-addon" id="basic-addon1">
+                                    <img src="img/search-input.png" height="37" width="32" alt="search">
 
-                </div>  
-    	</div>	
-    </div>
-	</footer><!-- footer -->
+                                </span>
+                             </div>
+                             <div class="bottop-input">
+                                <span>Розробка сайту:<img src="img/footer-input-logo.png" height="28" width="99" alt="logo-dev"></span>
+                                <span>© Центр політико-правових реформ 1996 - 2015</span>
+                             </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-maps">
+                    <div class="overlay">
+                        <span>м.Київ, вул.Хрещатик 4, оф. 13, поштовий індекс: 01001</span>
+                    </div>
+                    <div id="map-canvas">
+
+                    </div>  
+            </div>  
+        
+        </div>     
+    </footer>
+    <!-- /footer -->
+
 </div><!-- wrapper -->
 
 
