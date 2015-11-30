@@ -545,17 +545,7 @@ main{
         z-index: 10;
         line-height: 1.30;
     }
-    span:last-child{
-        position: absolute;
-        width: 100%;
-        left: 25%;
-        top: 128%;
-        display: block;
-        font-size: 12px;
-        font-family: "PTSerifRegular";
-        font-weight: 500;
-        z-index: 10;
-    }
+
 }
 .right-text-for-news{
 	margin-top: 6%;
@@ -585,8 +575,33 @@ main{
 		color: #1c5281;
 		font-family: "PTSerifRegular";
 	}
+    .date-span{
+        font-size: 14px;
+        color: #33332e;
+        font-family: "PTSerifBold";
+        padding-bottom: 10px;
+        display: block;
+    }
+
 
 }
+    .cont-for-artlink{
+        padding:0;
+        padding-top: 9px;
+        a:hover{
+            text-decoration: none;
+        }
+        img{
+            padding-right: 5px;
+        }
+        span{
+            color: @light-blue;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "PTSerifRegular";
+            vertical-align: super;
+        }
+    }
 .text-info-news{
 	margin-top: 7%;
 	font-size: 17px;
@@ -1363,3 +1378,4 @@ footer{
  
 
 }
+//

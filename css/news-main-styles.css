@@ -7153,17 +7153,6 @@ main {
   z-index: 10;
   line-height: 1.30;
 }
-.top-for-left-main span:last-child {
-  position: absolute;
-  width: 100%;
-  left: 25%;
-  top: 128%;
-  display: block;
-  font-size: 12px;
-  font-family: "PTSerifRegular";
-  font-weight: 500;
-  z-index: 10;
-}
 .right-text-for-news {
   margin-top: 6%;
 }
@@ -7192,6 +7181,30 @@ main {
   font-size: 32px;
   color: #1c5281;
   font-family: "PTSerifRegular";
+}
+.index-text-info .date-span {
+  font-size: 14px;
+  color: #33332e;
+  font-family: "PTSerifBold";
+  padding-bottom: 10px;
+  display: block;
+}
+.cont-for-artlink {
+  padding: 0;
+  padding-top: 9px;
+}
+.cont-for-artlink a:hover {
+  text-decoration: none;
+}
+.cont-for-artlink img {
+  padding-right: 5px;
+}
+.cont-for-artlink span {
+  color: #1c5281;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PTSerifRegular";
+  vertical-align: super;
 }
 .text-info-news {
   margin-top: 7%;
